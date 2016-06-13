@@ -1,0 +1,7 @@
+module MapBool where
+
+import Data.Bool
+
+mapBool :: (a -> Bool) -> [a] -> [a]
+mapBool b xs = [x | x <- xs, b xs]
+ 
